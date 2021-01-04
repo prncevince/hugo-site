@@ -1,0 +1,27 @@
+{
+  "name": "hugo-site",
+  "version": "0.1.0",
+  "description": "My personal Hugo website. This contains the Hugo site setup & static content, minus some of the applications.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/prncevince/hugo-site.git"
+  },
+  "author": "Vincent Clemson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/prncevince/hugo-site/issues"
+  },
+  "homepage": "https://gitlab.com/prncevince/hugo-site#readme",
+  "devDependencies": {
+    "commitizen": "^4.2.2"
+  },
+  "config": {
+    "commitizen": {
+      "path": "commitiquette"
+    }
+  }
+}
