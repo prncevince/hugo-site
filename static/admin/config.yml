@@ -6,9 +6,9 @@
 backend:
   name: gitlab
   branch: master # Branch to update (optional; defaults to master)
-  repo: prncevince/demo-site # Path to your GitLab repository
+  repo: prncevince/hugo-site # Path to your GitLab repository
   auth_type: implicit # Required for implicit grant
-  app_id: 3e0ffe6e3ab6b64b63404b3b73670ba1bf34a2dd9739b572c335255860d842f6 # Application ID from your GitLab settings
+  app_id: # Application ID from your GitLab settings
 #another option
 #With this backend, you can write and publish content normally, but any changes will disappear when you reload the page.
 #backend:
@@ -17,13 +17,13 @@ site_url: /
 # feature to draft, review, & approve posts (before push to remote - creates new branches & pull requests)
 publish_mode: editorial_workflow
 # Where media files are  stored - relative to project root
-media_folder: "static/images/uploads"
+media_folder: "site/static/images/uploads"
 # The src attribute for uploaded media - will begin with /images/uploads (defaults to media_folder adding '/' if bereft)
 public_folder: "/images/uploads"
 collections:
   - name: "blog" # Used in routes, e.g., /admin/collections/blog
     label: "Blog" # Used in the UI
-    folder: "content/posts" #"_posts/blog" # The path to the folder where the documents are stored
+    folder: "site/content/posts" #"_posts/blog" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
